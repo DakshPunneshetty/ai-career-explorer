@@ -2,7 +2,7 @@ import streamlit as st
 from groq import Groq
 import os
 
-client = Groq(api_key="YOUR_GROQ_KEY")
+client = Groq(api_key=os.environ["GROQ_API_KEY"])
 
 st.title("AI Career Explorer")
 
